@@ -1,6 +1,8 @@
 import React from "react"
 import styles from "../css/error.module.css"
-import { Link } from "gatsby"
+
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 import Banner from "../components/Banner"
 import Layout from "../components/Layout"
 function error(props) {
@@ -8,9 +10,9 @@ function error(props) {
     <Layout>
       <header className={styles.error}>
         <Banner title="oops it'is a dead end">
-          <Link to="/" className="btn-white">
+          <AniLink fade to="/" className="btn-white">
             back to home page
-          </Link>
+          </AniLink>
         </Banner>
       </header>
     </Layout>
